@@ -4,30 +4,30 @@ return {
   lazy = false,
   ---@type snacks.Config
   opts = {
-    bigfile = { enabled = true },
+    bigfile = { enabled = false },
     dashboard = { enabled = true },
     explorer = { enabled = true },
     indent = { enabled = true },
-    -- input = { enabled = true },
     notifier = {
       enabled = true,
       timeout = 3000,
     },
-    picker = { enabled = true, sources = {
-      explorer = {
-        layout = { layout = { position = 'right' } },
-      },
-    } },
-    quickfile = { enabled = true },
-    scope = { enabled = true },
-    scroll = { enabled = true },
-    statuscolumn = { enabled = true },
-    words = { enabled = true },
-    styles = {
-      notification = {
-        -- wo = { wrap = true } -- Wrap notifications
+    input = {
+      enabled = true,
+    },
+    picker = {
+      enabled = true,
+      sources = {
+        explorer = {
+          layout = { layout = { position = 'right' } },
+        },
       },
     },
+    quickfile = { enabled = false },
+    scope = { enabled = false },
+    scroll = { enabled = false },
+    statuscolumn = { enabled = false },
+    words = { enabled = false },
   },
   keys = {
     -- Top Pickers & Explorer
@@ -247,13 +247,6 @@ return {
         Snacks.scratch.select()
       end,
       desc = 'Select Scratch Buffer',
-    },
-    {
-      '<leader>bd',
-      function()
-        Snacks.bufdelete()
-      end,
-      desc = 'Delete Buffer',
     },
     {
       '<leader>cR',

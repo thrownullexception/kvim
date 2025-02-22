@@ -5,11 +5,7 @@ return {
     local mappings = {
       { 'sa', desc = 'Add Surrounding', mode = { 'n', 'v' } },
       { 'sd', desc = 'Delete Surrounding' },
-      -- { 'sf',  desc = 'Find Right Surrounding' },
-      -- { 'sF', desc = 'Find Left Surrounding' },
-      -- { 'sh' desc = 'Highlight Surrounding' },
       { 'sr', desc = 'Replace Surrounding' },
-      -- { 'sn', desc = 'Update `MiniSurround.config.n_lines`' },
     }
     mappings = vim.tbl_filter(function(m)
       return m[1] and #m[1] > 0

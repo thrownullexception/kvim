@@ -34,6 +34,7 @@ require('lazy').setup {
   require 'plugins.surround',
   require 'plugins.tmux',
   require 'plugins.misc',
+  require 'plugins.dadbod',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`

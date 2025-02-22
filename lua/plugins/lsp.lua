@@ -121,9 +121,8 @@ return {
       --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
       ts_ls = {
-        enabled = true,
+        enabled = false,
       },
-
       vtsls = {
         -- explicitly add default filetypes, so that we can extend
         -- them in related extras
