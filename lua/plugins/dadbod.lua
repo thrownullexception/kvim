@@ -5,11 +5,12 @@ return {
     { 'kristijanhusak/vim-dadbod-completion', ft = { 'sql', 'mysql', 'plsql' }, lazy = true }, -- Optional
   },
   cmd = {
-    'DBUI',
     'DBUIToggle',
   },
+  keys = {
+    { '<leader>d', '<cmd>DBUIToggle<cr>', desc = 'Toggle DB' },
+  },
   init = function()
-    -- Your DBUI configuration
     vim.g.db_ui_use_nerd_fonts = 1
   end,
 }

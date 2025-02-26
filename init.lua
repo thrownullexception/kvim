@@ -35,6 +35,7 @@ require('lazy').setup {
   require 'plugins.tmux',
   require 'plugins.misc',
   require 'plugins.dadbod',
+  require 'plugins.copilot',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
