@@ -66,6 +66,7 @@ return {
           filename,
         },
         lualine_x = {
+          'copilot',
           Snacks.profiler.status(),
           diagnostics,
           diff,

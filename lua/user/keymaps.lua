@@ -12,6 +12,8 @@ keymap({ 'n', 'x' }, 'x', [["_x]], opts)
 
 keymap('n', '<leader>fn', '<cmd>enew<cr>', { desc = 'New File' })
 
+keymap('n', 'vig', 'ggVG')
+
 keymap('n', 'n', 'nzzzv', opts)
 keymap('n', 'N', 'Nzzzv', opts)
 

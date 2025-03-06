@@ -10,6 +10,7 @@ return {
       }
     end,
   },
+  { 'AndreM222/copilot-lualine' },
   {
     'zbirenbaum/copilot-cmp',
     opts = {},

@@ -34,7 +34,11 @@ return {
     {
       '<leader><space>',
       function()
-        Snacks.picker.files()
+        Snacks.picker.files {
+          hidden = true,
+          ignored = true,
+          exclude = { '**/node_modules/**' },
+        }
       end,
       desc = 'Find Files',
     },
@@ -55,18 +59,15 @@ return {
     {
       '<leader>e',
       function()
-        Snacks.explorer()
+        Snacks.explorer {
+          hidden = true,
+          ignored = true,
+          exclude = { '**/node_modules', '.git' },
+        }
       end,
       desc = 'File Explorer',
     },
     -- find
-    {
-      '<leader>fg',
-      function()
-        Snacks.picker.git_files()
-      end,
-      desc = 'Find Git Files',
-    },
     {
       '<leader>fp',
       function()
